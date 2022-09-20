@@ -51,7 +51,7 @@ class PersonFragment : Fragment() {
                 statusPerson.text = getString(R.string.status, person.status)
                 speciesPerson.text = getString(R.string.species, person.species)
                 genderPerson.text = getString(R.string.gender, person.gender)
-                lastLocation.text = getString(R.string.last_location, person.location)
+                lastLocation.text = getString(R.string.last_location, person.location.name)
                 numberOfEpisodes.text = getString(R.string.number_of_episodes, person.episode.size.toString())
 
                 Glide.with(imageView)
